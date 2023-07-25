@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jul 25 23:49:31 2023
+
+@author: shubham prajapati
+"""
+
+"""
+Two strings are said to be similar if they are composed of the smae characters.For example "abaca" and "cba" are similar since both of them are composed of characters 'a','b' and 'c'..
+However "abaca" and "bcd" are note similar since they do not share all of the same letters.
+"""
+
+    
+lst=["xyz","foo","of"]
+print(lst)
+l=len(lst)
+print(l)
+count=0
+for i in range(0,l):
+    for j in range(1,l):
+        if(len(lst[i])>len(lst[j])):
+            if lst[j] in lst[i]:
+                count+=1
+            else:
+                break
+                
+            
+            
+        else:
+            if lst[i] in lst[j]:
+                count+=1
+            else:
+                break
+            
+            
+            
+                
+            
+print(count)
+    
+        
+        
