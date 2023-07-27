@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul 27 19:28:44 2023
+
+@author: shubham prajapati
+"""
+
+import math
+def cal(x,y,count):
+    while(x>0 and y>0):
+            rem1=x%10
+            rem2=y%10
+            count=count+abs(rem1-rem2)
+            x=x//10
+            y=y//10
+    
+    return count
+
+        
+
+arr1=eval(input("Enter an element in list1 :"))  #or you can take static list i.e arr1=[123,543] ,arr2=[321,279]
+arr2=eval(input("Enter an element in list2 :"))   #input number of element as you have input in arr1
+count,step=0,0
+for i in range(0,len(arr1)):
+    step+=cal(arr1[i],arr2[i],count)
+print("Total",step,"steps are required.")
+
+
+
+	
