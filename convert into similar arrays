@@ -4,6 +4,41 @@ Created on Thu Jul 27 19:28:44 2023
 
 @author: shubham prajapati
 """
+"""
+Q.There are two arrays of integers,arr1,arr2.One move is defined as increment or decrement of one element to match in an array.Determine the minimu number of moves to match arr1 with arr2.No reordering of the digits is allowed.
+
+
+
+Example :
+
+arr1=[123,543]
+
+arr2=[321,279]
+
+Match arr[0]=123 with arr2[0]=321
+
+i.increment 1 twice to get 3 (2 moves.
+
+ii.decrement 3 twice to get 1(2 moves)
+
+iii.4 moves are needed to match 123 with 321.
+
+
+
+Match arr1[1]=543 with arr2[1]=279
+
+i.decrement 5 three times  to get 2 (3 moves.
+
+ii.increment 4 three times to get 7(2 moves)
+
+iii.increment 3 six times to get 9(6 moves).
+
+iv.4 moves are needed to match 123 with 321.
+
+
+
+16 total moves are needed to match the arrays arr1 and arr2.
+"""
 
 import math
 def cal(x,y,count):
