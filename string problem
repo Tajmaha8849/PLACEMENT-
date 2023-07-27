@@ -6,6 +6,7 @@ Created on Tue Jul 25 23:49:31 2023
 """
 
 """
+Question asked in MRI INFOTECH company coding round in PARUL UNIVERSITY on 25 JULY 2023
 Two strings are said to be similar if they are composed of the smae characters.For example "abaca" and "cba" are similar since both of them are composed of characters 'a','b' and 'c'..
 However "abaca" and "bcd" are note similar since they do not share all of the same letters.
 """
